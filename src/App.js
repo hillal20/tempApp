@@ -1,25 +1,77 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/home";
+import Headers from "./components/headers.js";
+import Login from "./components/login.js";
+import Register from "./components/register.js";
+import MainPage from "./components/mainPage";
 function App() {
+  const [login, setLogin] = useState(false);
+  const [logout, setLogout] = useState(false);
+  const [register, setRegister] = useState(false);
+
+  useEffect(() => {}, [login, logout, register]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Home />
+        <Headers
+          setRegister={setRegister}
+          setLogin={setLogin}
+          login={login}
+          register={register}
+          setLogout={setLogout}
+          logout={logout}
+        />
+        <Route
+          path="/register"
+          render={props => {
+            return (
+              <Register
+                {...props}
+                register={register}
+                login={login}
+                setLogout={logout}
+                setRegister={setRegister}
+                setLogin={setLogin}
+              />
+            );
+          }}
+        />
+        <Route
+          path="/login"
+          render={props => {
+            return (
+              <Login
+                {...props}
+                login={login}
+                setLogout={setLogout}
+                register={register}
+                setRegister={setRegister}
+                setLogin={setLogin}
+              />
+            );
+          }}
+        />
+        <Route
+          path="/main-page"
+          exact
+          render={props => {
+            return (
+              <MainPage
+                {...props}
+                setLogout={setLogout}
+                login={login}
+                register={register}
+                setRegister={setRegister}
+                setLogin={setLogin}
+              />
+            );
+          }}
+        />
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,43 @@
+.form {
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    width: 80%;
+
+}
+
+.input {
+    color: blue;
+    font-family: bold;
+    font-size: 22px;
+    margin-right: 0px;
+    text-align: center;
+
+
+}
+
+.input input {
+    margin-left: 20px;
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+
+}
+
+.btn button {
+    width: 100px;
+    height: 50px;
+    color: red;
+    font-size: 22px;
+    font-family: bold;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: lightgoldenrodyellow
+}

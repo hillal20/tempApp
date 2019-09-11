@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Camry",
+    "url": "https://cnet2.cbsistatic.com/img/5nB8oVJCggdZ1MYvetWl3NE1V1o=/868x488/2019/01/22/e4e5f32e-f0a3-4d42-b081-ae5a1912fe52/2018-toyota-camry-xse-05-3ceef72f454ff1b3ed36ac425f9beecf743f1f8f.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Golf",
+    "url": "https://cdn.motor1.com/images/mgl/2ovAB/s4/2020-vw-golf-rendering.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fusion",
+    "url": "https://solutionford.com/wp-content/uploads/2018/04/solution-ford-fusion-2019.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Impala",
+    "url": "https://www.newcartestdrive.com/wp-content/uploads/2017/03/2017-impala.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Odyssey",
+    "url": "https://assets.pcmag.com/media/images/424606-2016-honda-odyssey-se.jpg?width=810&height=456"
+  }
+]

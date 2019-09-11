@@ -70,6 +70,15 @@ function App() {
             );
           }}
         />
+        {!login && !register && !logout && (
+          <div>
+            <img
+              src="https://image.shutterstock.com/image-vector/welcome-poster-spectrum-brush-strokes-260nw-1146069941.jpg"
+              height="400px"
+              width="400px"
+            />
+          </div>
+        )}
       </div>
     </Router>
   );
